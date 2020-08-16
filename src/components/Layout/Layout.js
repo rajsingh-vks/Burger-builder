@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Aux from '../../hoc/Aux';
+// import Aux from '../../hoc/Aux';
 import './Layout.css';
 import Toolbar from '../Navigation/Toolbar/Toolbar';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
@@ -19,6 +19,8 @@ export class Layout extends Component {
     }
 //Close Side slide
     render(){
+        const Aux = (props) => props.children;
+
         return(
         <Aux>
             <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler}/>
