@@ -1,0 +1,47 @@
+.SideDrawer{
+    position: fixed;
+    width: 280px;
+    max-width: 70%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    background-color: #fff;
+    padding: 32px 16px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+}
+
+@media (min-width:500px){
+    .SideDrawer{
+        display: none;
+    }
+}
+@media (max-width:500px){
+    .Logo{
+        height: 11%;
+    }
+    .Logo div img{
+        width: 30%;
+        height:auto
+    }
+    .NavigationItems {
+        flex-flow: column;
+        align-items: self-start;
+    }
+    .NavigationItem a{
+        color: #8F5C2C;
+    }
+    .SideDrawer .Logo img{
+        height: 45px;
+    }
+    .SideDrawer ul.NavigationItems{
+        display: block;
+    }
+}
+.Open{
+    transform: translateX(0);
+}
+.Close{
+    transform: translateX(-100%);
+}
