@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Modal.css';
-import Aux from '../../../hoc/Aux';
+// import Aux from '../../../hoc/Aux';
 import Backdrop from '../Backdrop/Backdrop';
 
 export class Modal extends Component {
@@ -11,7 +11,9 @@ export class Modal extends Component {
     // componentWillUpdate () {
     //     console.log('[Modal] WillUpdate');
     // }
+    
     render() {
+        const Aux = (props) => props.children;
         return (
          <Aux>
             <Backdrop 

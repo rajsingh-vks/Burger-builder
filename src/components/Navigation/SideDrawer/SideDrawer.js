@@ -3,7 +3,7 @@ import classes from "./SideDrawer.css";
 import Logo from "../../Logo/Logo";
 import NavigationItems from "../NavigationItems/NavigationItems";
 import Backdrop from "../../UI/Backdrop/Backdrop";
-import Aux from "../../../hoc/Aux";
+// import Aux from "../../../hoc/Aux";
 
 export class SideDrawer extends Component {
   render() {
@@ -11,7 +11,7 @@ export class SideDrawer extends Component {
       if (this.props.open){
           attchedClasses = [SideDrawer, classes.Close];
       }
-
+    const Aux = (props) => props.children;
     return (
       <Aux>
         <Backdrop show={this.props.open} clicked={this.props.closed}/>
