@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import Aux from '../../hoc/Aux';
+// import Aux from '../../hoc/Aux';
 import Burger from '../../components/Burger/Burger';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
 import Modal from '../../components/UI/Modal/Modal';
@@ -179,6 +179,7 @@ componentDidMount () {
     // if(this.state.loading){
     //   orderSummary = <Spinner/>
     // }
+    const Aux = (props) => props.children;
     return(
       <Aux>
           <Modal show={this.state.purchasing} modalClosed={this.purchaseCancelHandler}>
