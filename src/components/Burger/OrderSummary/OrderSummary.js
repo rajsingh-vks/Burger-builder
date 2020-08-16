@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Aux from '../../../hoc/Aux';
+// import Aux from '../../../hoc/Aux';
 import Button from '../../UI/Button/Button';
 
 export class OrderSummary extends Component {
@@ -28,7 +28,7 @@ export class OrderSummary extends Component {
                     </li> );
             } );
 
-        
+        const Aux = (props) => props.children;
         return (
             <Aux>
             <div>
